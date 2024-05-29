@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "src/parify_backend"
+]
+resolver = "2"

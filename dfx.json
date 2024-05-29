@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "parify_backend": {
+      "candid": "src/parify_backend/parify_backend.did",
+      "package": "parify_backend",
+      "type": "rust"
+    },
+    "parify_frontend": {
+      "dependencies": [
+        "parify_backend"
+      ],
+      "source": [
+        "src/parify_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "parify_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
